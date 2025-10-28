@@ -7,24 +7,17 @@ VirtualBox- Kali Machine
 STEP 1: Finding local IP range 
 Command: ip a
 <img width="987" height="466" alt="Image" src="https://github.com/user-attachments/assets/9f9d19a2-bdb1-4d9c-90d7-522a7b98e13b" />
-Local IP range found under eth0 as 10.0.2.15/24
-
+Local IP range found under eth0 example as 192.168.2.15/24
 STEP 2: Open wireshark and keep ready for packet capture
 <img width="646" height="152" alt="Image" src="https://github.com/user-attachments/assets/28388ede-a89b-405a-82c8-9c2c844836a5" />
 
-STEP 3: Run the nmap command: nmap -sS 10.0.2.15/24
-<img />
+STEP 3: Run the nmap command: for example as nmap -sS 192.168.2.15/24
+<img width="680" height="633" alt="Image" src="https://github.com/user-attachments/assets/8303018d-35b8-4a4f-a8f0-57b9e1796729" />
 
 As we can see in the screenshot above the command requires sudo privileges.
 
 Results:
-Out of 256 possible hosts, 3 are active (responded)
-
-On host 10.0.2.2 ports 135, 445, 3306, 7070, 9999 are open
-
-On host 10.0.2.3 port 53 is open
-
-On host 10.0.2.15 there are no open ports
+ports 135,139,445,903 are open
 
 STEP 4: Go to wireshark and monitor the packages 
 <img  />
@@ -32,7 +25,6 @@ As we can see here the TCP handshake is taking place.
 
 STEP 5: 
 Save scan results in a text file for future reference.
-<img  />
 
 Additional Analysis:
 
