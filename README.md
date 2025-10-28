@@ -31,17 +31,18 @@ Save scan results in a text file for future reference.
 Additional Analysis:
 
 Common services running in the open ports:
-TCP 135 : Microsoft RPC / DCE-RPC (RPC Endpoint Mapper). Common on Windows hosts (RPC/DCOM/remote management).
 
-TCP 445 :Microsoft-DS (SMB/CIFS) used for Windows file sharing, domain controller communication, named pipes, and many Windows services.
+Port 135: Used for RPC (Remote Procedure Call) — enables communication between Windows services; often targeted by worms.
 
-TCP 3306 : MySQL / MariaDB server (database).
 
-TCP 7070 :Often used by streaming servers (RealServer / Helix / RTSP-like services) or custom apps; not standardized — application-specific.
+Port 139: NetBIOS — used for file and printer sharing on local networks; risky if exposed.
 
-TCP 9999 : Frequently used by web admin panels (Abyss web server uses 9999 by default), debug interfaces, or custom services. Highly variable.
 
-TCP 53 : DNS (domain service) over TCP — used for zone transfers, large DNS responses, and when UDP fails.
+Port 445: SMB — handles modern file sharing and Windows network access; exploited by ransomware like WannaCry.
+
+
+Port 903: VMware service port — allows remote console access to virtual machines; should be restricted to trusted networks.
+
 
 Security Risks cause by open ports:
 
