@@ -10,7 +10,7 @@ Command: ip a
 Local IP range found under eth0 as 10.0.2.15/24
 
 STEP 2: Open wireshark and keep ready for packet capture
-<img />
+<img width="646" height="152" alt="Image" src="https://github.com/user-attachments/assets/28388ede-a89b-405a-82c8-9c2c844836a5" />
 
 STEP 3: Run the nmap command: nmap -sS 10.0.2.15/24
 <img />
