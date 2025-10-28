@@ -6,7 +6,7 @@ VirtualBox- Kali Machine
 
 STEP 1: Finding local IP range 
 Command: ip a
-<img https://github.com/satishkumarvengala/Task-1-Scan-Your-Local-Network-for-Open-Ports/blob/main/Screenshot%202025-10-28%20133013%20ip.png?raw=true/>
+<img width="987" height="466" alt="Image" src="https://github.com/user-attachments/assets/9f9d19a2-bdb1-4d9c-90d7-522a7b98e13b" />
 Local IP range found under eth0 as 10.0.2.15/24
 
 STEP 2: Open wireshark and keep ready for packet capture
